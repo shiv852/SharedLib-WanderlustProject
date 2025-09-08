@@ -16,6 +16,8 @@ def call() {
             // Run OWASP Dependency-Check
             dependencyCheck additionalArguments: '''
                 --disableNodeAudit 
+                --disableAssembly 
+                --disableYarnAudit 
                 --scan ./backend 
                 --scan ./frontend 
                 --format XML
