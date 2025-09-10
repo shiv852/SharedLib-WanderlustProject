@@ -1,5 +1,5 @@
 def call(){
-  timeout(time: 30, unit: "MINUTES"){
+  timeout(time: 40, unit: "MINUTES"){
       waitForQualityGate abortPipeline: false
   }
 }
